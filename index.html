@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuoteDaily - Beautiful English Quotes & Short Sentences</title>
+    <meta name="description" content="Discover beautiful English quotes, inspirational sayings, love quotes, life wisdom, and social media captions. Daily inspiration for your soul.">
+    <meta name="keywords" content="english quotes, inspirational quotes, love quotes, life quotes, short sentences, social media captions">
+    <link rel="canonical" href="https://jingang.eu.cc/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">QuoteDaily</a>
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search quotes..." autocomplete="off">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h1 class="hero-title">Words that touch the soul</h1>
+                <p class="hero-subtitle">Curated collection of beautiful English quotes</p>
+            </section>
+
+            <section class="categories">
+                <a href="category/inspirational.html" class="category-tag">Inspirational</a>
+                <a href="category/love.html" class="category-tag">Love</a>
+                <a href="category/life.html" class="category-tag">Life</a>
+                <a href="category/funny.html" class="category-tag">Funny</a>
+                <a href="category/positive.html" class="category-tag">Positive</a>
+                <a href="category/work.html" class="category-tag">Work</a>
+                <a href="category/social.html" class="category-tag">Social Status</a>
+            </section>
+
+            <section class="quotes-section">
+                <div id="quotesContainer" class="quotes-grid">
+                    <!-- Quotes will be loaded here -->
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No quotes found. Try different keywords.</p>
+                </div>
+            </section>
+
+            <section class="pagination">
+                <button id="prevBtn" class="page-btn" disabled>← Previous</button>
+                <span id="pageInfo" class="page-info">Page 1 of 10</span>
+                <button id="nextBtn" class="page-btn">Next →</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-categories">
+                <h3>Browse by Category</h3>
+                <div class="footer-links">
+                    <a href="category/inspirational.html">Inspirational Quotes</a>
+                    <a href="category/love.html">Love Quotes</a>
+                    <a href="category/life.html">Life Quotes</a>
+                    <a href="category/funny.html">Funny Quotes</a>
+                    <a href="category/positive.html">Positive Quotes</a>
+                    <a href="category/work.html">Work Quotes</a>
+                    <a href="category/social.html">Social Media Captions</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 QuoteDaily. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script src="quotes-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

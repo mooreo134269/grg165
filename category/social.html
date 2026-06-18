@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Captions - QuoteDaily</title>
+    <meta name="description" content="Perfect captions and short quotes for your Instagram, Facebook, and social media posts.">
+    <meta name="keywords" content="social media captions, instagram captions, short quotes, status updates">
+    <link rel="canonical" href="https://jingang.eu.cc/category/social.html">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">QuoteDaily</a>
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search quotes..." autocomplete="off">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="category-header">
+                <h1>Social Media Captions</h1>
+                <p>Perfect captions and short quotes for your Instagram and social media posts</p>
+            </section>
+
+            <section class="categories">
+                <a href="inspirational.html" class="category-tag">Inspirational</a>
+                <a href="love.html" class="category-tag">Love</a>
+                <a href="life.html" class="category-tag">Life</a>
+                <a href="funny.html" class="category-tag">Funny</a>
+                <a href="positive.html" class="category-tag">Positive</a>
+                <a href="work.html" class="category-tag">Work</a>
+                <a href="social.html" class="category-tag active">Social Status</a>
+            </section>
+
+            <section class="quotes-section">
+                <div id="quotesContainer" class="quotes-grid">
+                    <!-- Quotes will be loaded here -->
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>No quotes found. Try different keywords.</p>
+                </div>
+            </section>
+
+            <section class="pagination">
+                <button id="prevBtn" class="page-btn" disabled>← Previous</button>
+                <span id="pageInfo" class="page-info">Page 1 of 2</span>
+                <button id="nextBtn" class="page-btn">Next →</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-categories">
+                <h3>Browse by Category</h3>
+                <div class="footer-links">
+                    <a href="inspirational.html">Inspirational Quotes</a>
+                    <a href="love.html">Love Quotes</a>
+                    <a href="life.html">Life Quotes</a>
+                    <a href="funny.html">Funny Quotes</a>
+                    <a href="positive.html">Positive Quotes</a>
+                    <a href="work.html">Work Quotes</a>
+                    <a href="social.html">Social Media Captions</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 QuoteDaily. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script src="../quotes-data.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
